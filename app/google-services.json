@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "650765221052",
+    "firebase_url": "https://profrate-85de6.firebaseio.com",
+    "project_id": "profrate-85de6",
+    "storage_bucket": "profrate-85de6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650765221052:android:07932727eebc6eee5364b9",
+        "android_client_info": {
+          "package_name": "com.lemur.profrate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650765221052-dplgml7qr8jgjcui68h14jm0sla893js.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lemur.profrate",
+            "certificate_hash": "9b5df118e744feeb1e0660bc4579011aa54c6ad2"
+          }
+        },
+        {
+          "client_id": "650765221052-50j2nht1o984bhecl199k35kqhdd819o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7NRJwCMfuTfq73tgH89sJ-O0hviDeE9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650765221052-50j2nht1o984bhecl199k35kqhdd819o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

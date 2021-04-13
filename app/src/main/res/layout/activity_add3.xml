@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".add3">
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="237dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="87dp"
+        android:text="Rate the following from 1 - 10, 1 being low, 10 being high"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backG"
+        android:layout_width="395dp"
+        android:layout_height="395dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prompt"
+        app:srcCompat="@color/colorLemur" />
+
+    <EditText
+        android:id="@+id/fairEntry"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/backG"
+        app:layout_constraintTop_toTopOf="@+id/backG" />
+
+    <TextView
+        android:id="@+id/fairLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Fair grader"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/fairEntry"
+        app:layout_constraintRight_toRightOf="@+id/fairEntry"
+        app:layout_constraintTop_toBottomOf="@+id/fairEntry" />
+
+    <EditText
+        android:id="@+id/hwEntry"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="@+id/backG"
+        app:layout_constraintRight_toRightOf="@+id/backG"
+        app:layout_constraintTop_toTopOf="@+id/backG" />
+
+    <TextView
+        android:id="@+id/hwLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Amount of\nHW"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintLeft_toLeftOf="@+id/hwEntry"
+        app:layout_constraintRight_toRightOf="@+id/hwEntry"
+        app:layout_constraintTop_toBottomOf="@+id/hwEntry" />
+
+    <EditText
+        android:id="@+id/presEntry"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/backG"
+        app:layout_constraintTop_toTopOf="@+id/backG" />
+
+    <TextView
+        android:id="@+id/presLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Amount of\nPresentations"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/presEntry"
+        app:layout_constraintRight_toRightOf="@+id/presEntry"
+        app:layout_constraintTop_toBottomOf="@+id/presEntry" />
+
+    <EditText
+        android:id="@+id/paperEntry"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/backG"
+        app:layout_constraintStart_toStartOf="@+id/backG"
+        app:layout_constraintTop_toTopOf="@id/backG" />
+
+    <TextView
+        android:id="@+id/paperLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Amount of\npapers"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/paperEntry"
+        app:layout_constraintRight_toRightOf="@+id/paperEntry"
+        app:layout_constraintTop_toBottomOf="@+id/paperEntry" />
+
+    <EditText
+        android:id="@+id/readingEntry"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/backG"
+        app:layout_constraintLeft_toLeftOf="@+id/backG"
+        app:layout_constraintRight_toRightOf="@+id/backG"
+        app:layout_constraintTop_toTopOf="@id/backG" />
+
+    <TextView
+        android:id="@+id/readingLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Amount of\nreading"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/readingEntry"
+        app:layout_constraintRight_toRightOf="@+id/readingEntry"
+        app:layout_constraintTop_toBottomOf="@+id/readingEntry" />
+
+    <EditText
+        android:id="@+id/teamEntry"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/backG"
+        app:layout_constraintEnd_toEndOf="@+id/backG"
+        app:layout_constraintTop_toTopOf="@id/backG" />
+
+    <TextView
+        android:id="@+id/teamLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Amount of\ngroup work"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/teamEntry"
+        app:layout_constraintRight_toRightOf="@+id/teamEntry"
+        app:layout_constraintTop_toBottomOf="@+id/teamEntry" />
+
+    <EditText
+        android:id="@+id/etrEntry"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/backG"
+        app:layout_constraintStart_toStartOf="@+id/backG" />
+
+    <TextView
+        android:id="@+id/etrLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Easy to\nReach"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/etrEntry"
+        app:layout_constraintRight_toRightOf="@+id/etrEntry"
+        app:layout_constraintTop_toBottomOf="@+id/etrEntry" />
+
+    <EditText
+        android:id="@+id/deadEntry"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/backG"
+        app:layout_constraintEnd_toEndOf="@+id/backG" />
+
+    <TextView
+        android:id="@+id/deadLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Harsh\ndeadlines"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/deadEntry"
+        app:layout_constraintRight_toRightOf="@+id/deadEntry"
+        app:layout_constraintTop_toBottomOf="@+id/deadEntry" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#00000000"
+        app:layout_constraintBottom_toBottomOf="@id/deadEntry"
+        app:layout_constraintTop_toTopOf="@+id/etrEntry"
+        app:layout_constraintLeft_toLeftOf="@+id/backG"
+        app:layout_constraintRight_toRightOf="@+id/backG" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Would you choose \nthis professor \nagain?"
+        android:textAlignment="center"
+        android:textColor="#FD000000"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/checkBox"
+        app:layout_constraintRight_toRightOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="57dp"
+        android:text="submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
